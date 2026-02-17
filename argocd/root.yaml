@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ТВОЙ_USER/homelab-k8s.git
+    repoURL: https://github.com/itechboss/homelab-k8s.git
     targetRevision: main
     path: namespaces
   destination:
