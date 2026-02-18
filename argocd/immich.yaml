@@ -16,4 +16,11 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  ignoreDifferences:
+  - group: ""
+    kind: PersistentVolumeClaim
+    jsonPointers:
+    - /status
+    - /spec/volumeName
+    - /metadata/annotations
 
