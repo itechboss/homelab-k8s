@@ -8,10 +8,12 @@ spec:
   source:
     repoURL: https://github.com/itechboss/homelab-k8s.git
     targetRevision: main
-    path: argocd
+    path: .
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: default
   syncPolicy:
     automated:
       prune: true
